@@ -59,3 +59,6 @@ public class TranslatorTest {
 }
 ```
 
+```
+mvn install -DskipTests
+```
