@@ -21,6 +21,12 @@ public class reversationPage {
     @FindBy(how = How.NAME, using = "EndTime")
     public WebElement txtEndTime;
 
+    @FindBy(how = How.NAME, using = "listFromTime")
+    public WebElement txtListFromTime;
+
+    @FindBy(how = How.NAME, using = "listEndTime")
+    public WebElement txtListEndTime;
+
     @FindBy(how = How.NAME, using = "Rev")
     public WebElement btnRev;
 
@@ -28,6 +34,12 @@ public class reversationPage {
     {
         txtFromTime.sendKeys(FromTime);
         txtEndTime.sendKeys(EndTime);
+    }
+
+    public void listReversation(String FromTime, String EndTime)
+    {
+        txtListFromTime.sendKeys(FromTime);
+        txtListEndTime.sendKeys(EndTime);
     }
 
     public void ClickRev()
