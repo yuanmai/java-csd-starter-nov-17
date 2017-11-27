@@ -6,9 +6,10 @@ import static org.junit.Assert.assertEquals;
 public class TennisRunner {
 
     @Test
-    public void give_right_password_and_username_then_login_sucess(String username,String password)
+    public void give_right_password_and_username_then_login_sucess()
     {
-        assertEquals(0,0);
+        int result=0;
+        assertEquals(0,result);
 
         return ;
     }

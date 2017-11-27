@@ -39,5 +39,15 @@ public class HelloController implements HtmlDsl {
         ).asString();
     }
 
-
+    public String Order() {
+        return html(
+                head(),
+                body(
+                        h1("Hello World"),
+                        article(
+                                p("预定成功")
+                        )
+                )
+        ).asString();
+    }
 }
